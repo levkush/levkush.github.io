@@ -1,6 +1,11 @@
 {
+  "scripts": {
+      "sass": "sass -w css/"
+  },
   "dependencies": {
     "bootstrap": "^5.2.3",
-    "express": "^4.18.2"
+    "express": "^4.18.2",
+    "scss": "^0.2.4"
   }
 }
+

@@ -1,0 +1,76 @@
+/* JetBrains Mono font import */
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+body {
+    font-family: 'JetBrains Mono', monospace !important;
+    background-color: #282828 !important;
+    color: #fff !important;
+}
+
+.whoami {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: normal;
+    
+}
+.whoami_maintext {
+    font-size: 6vw;
+    margin: 0;
+    font-weight: normal;
+    padding: 0;
+    background: #128FB7;
+    background: linear-gradient(to right, #128FB7 0%, #48FF5B 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+.whoami_subtext {
+    font-size: 1.5vw;
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+}
+.skills_text {
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+}
+
+.contacts {
+    h3 {
+        font-size: 1.5vw;
+        font-weight: normal;
+
+    }
+    .discord_text {
+        background: #7289DA;
+        background: linear-gradient(to right, #7289DA 0%, #AC72DA 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    .email_text {
+        background: #72C7DA;
+        background: linear-gradient(to right, #72C7DA 0%, #72A2DA 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    .github_text {
+        font-size: 1.5vw;
+        font-weight: normal;
+        background: #81DA72;
+        background: linear-gradient(to right, #81DA72 0%, #72DAC1 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    };
+
+    .github_text:link { text-decoration: none; };
+
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+@import 'bootstrap.scss';
