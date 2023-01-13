@@ -39,6 +39,17 @@ body {
   padding: 0;
 }
 
+.wip_maintext {
+  font-size: 6vw;
+  margin: 0;
+  font-weight: normal;
+  padding: 0;
+  background: #e7951a;
+  background: linear-gradient(to right, #e7951a 0%, #ffc13b 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .contacts {
   margin: 0;
   padding: 0;
