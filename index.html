@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+        html {
+            height: 210vw;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            color: #ffffff;
+        }
+        .br { 
+            display: block; 
+            margin-bottom: -1vw; 
+        } 
+        /* .contact-me {
+            transition: opacity 0.5s ease-in-out;
+        } 
+        */
+        .bg {
+            background-color: rgba(83,79,107, 30);
+        }
+    </style>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/6079dea2d9.js" crossorigin="anonymous"></script>
+    <script>
+    window.onscroll = myScrollFunction;
+
+    function myScrollFunction(){
+        var contactMeDiv = document.getElementById("contact-me");
+        console.log(getYOffset())
+        if(getYOffset() == 0){
+            contactMeDiv.classList.remove("translate-y-20");
+            contactMeDiv.classList.remove("opacity-0");
+        } else {
+            contactMeDiv.classList.add("translate-y-20");
+            contactMeDiv.classList.add("opacity-0");
+        }
+    };
+    //helper function (since ie handles scrolling different than firefox)
+    function getYOffset() {
+        var pageY;
+        if(typeof(window.pageYOffset)=='number') {
+        pageY=window.pageYOffset;
+        }
+        else {
+        pageY=document.documentElement.scrollTop;
+        }
+        return pageY;
+    }
+    </script>
+    </script>
+</head>
+<body class="bg-[#534F6B] w-[100%] h-[100%] flex justify-center items-center">
+    
+    <div class="w-[82%] h-[92%] p-[8.5vw] bg-[#282828] rounded-[3vw] justify-center">
+        <div class="flex items-start">
+            <div class="flex items-center">
+                <!-- <img src="photo_2024-02-14_15-01-01.png" class="sm:hidden p-0 w-[26vw] h-[26vw] rounded-full"> -->
+                <div class="">
+                    <h1 class="font-bold text-[5.6vw]">Hi, I’m<span class="br"></span>Lev.</h1>
+                    <p class="text-[2vw] font-regular text-[#D4D1D1]">
+                        I am a self-taught<span class="br"></span>
+                        developer from Canada.<span class="br"></span>
+                        I use Python, Go, Java,<span class="br"></span>
+                        HTML, CSS and JavaScript.
+                    </p>
+                </div>
+                <div class="mr-[13vw] flex"></div>
+                <img src="photo_2024-02-14_15-01-01.png" class="flex p-0 w-[26vw] h-[26vw] rounded-full">
+            </div>
+        </div>
+        <div>
+            <h1 class="font-bold text-[2vw] mt-[2.6vw]">Some of my projects:</h1>
+            <div class="text-center pt-[5vw]">
+                <img src="doomsday.png" class="w-[71.4vw] h-[39.6vw]" onclick="window.location = 'https://doomsdayclient.com'">
+                <h1 class="text-[1.8vw] font-regular text-[#D4D1D1] items-center rounded-[50px]">Website for Minecraft utility mod “Doomsday Client”</h1>
+            </div>
+            <div class="text-center pt-[5vw]">
+                <img src="book.png" class="w-[71.4vw] h-[39.6vw]]" onclick="window.location = 'https://amanda.levkush.dev'">
+                <h1 class="text-[1.8vw] font-regular text-[#D4D1D1] items-center rounded-[50px]">Landing for “Psychotherapeutic Reiki” book</h1>
+            </div>
+            <div class="text-center pt-[5vw]">
+                <img src="durak.png" class="w-[71.4vw] h-[39.6vw]" onclick="window.location = 'https://github.com/levkush/durak'">
+                <h1 class="text-[1.8vw] font-regular text-[#D4D1D1] items-center rounded-[50px]">Card game “Durak” based in a Terminal</h1>
+            </div>
+
+        </div>
+        <div class="items-center flex justify-between pt-[7vw]">
+            <h1 class="text-[2vw] font-regular">Made with love by levkush</h1>
+            <div>
+                <i class="fa-solid fa-envelope text-[2vw]"></i>
+                <i class="fa-brands fa-discord text-[2vw] pl-[0.5vw]"></i>
+                <i class="fa-brands fa-github text-[2vw] pl-[0.5vw]"></i>
+            </div>
+
+        </div>
+
+
+    </div>
+    <div class="scale-[70%] w-[55vw] rounded-[3vw] mb-[-1vw] ml-[20vw] fixed inset-x-0 bottom-0 justify-center h-[8.5vw] border-[5px] border-solid test border-[#534F6B] transition duration-300 overflow-hidden contact-me" id="contact-me">
+        <div class="flex items-center justify-center w-[55vw] h-[8.1vw] text-[1.7vw] py-[1.6vw] relative backdrop-blur-[20px] bg-[#534F6B]/25">
+            <div class="mr-[2vw]">
+                <h1>If you need my help, please let me know!</h1>
+            </div>
+            <div>
+                <button class="font-bold text-[1.3vw] w-[13.7vw] h-[4.6vw] border-[5px] border-solid border-[#534F6B] rounded-[2vw]">Contact me</button>
+            </div>
+        </div>
+    </div>
+    
+
+</body>
+</html>
