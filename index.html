@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>levkush.dev</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
         html {
@@ -52,6 +52,14 @@
         }
         return pageY;
     }
+    function copyClipboard(text) {
+
+        // Copy the text inside the text field
+        navigator.clipboard.writeText(text);
+
+        // Alert the copied text
+        alert("Copied the text: " + text);
+    } 
     </script>
     </script>
 </head>
@@ -93,8 +101,8 @@
         <div class="items-center flex justify-between pt-[7vw]">
             <h1 class="text-[2vw] font-regular">Made with love by levkush</h1>
             <div>
-                <i class="fa-solid fa-envelope text-[2vw] hover:text-[#534F6B] transition duration-300" onclick="window.location = 'mailto:levkush@levkush.dev'"></i>
-                <i class="fa-brands fa-discord text-[2vw] pl-[0.5vw] hover:text-[#534F6B] transition duration-300"" onclick="window.location = 'https://discordapp.com/users/423521040942104586'"></i>
+                <i class="fa-solid fa-envelope text-[2vw] hover:text-[#534F6B] transition duration-300" onclick="copyClipboard('levkush@levkush.dev')"></i>
+                <i class="fa-brands fa-discord text-[2vw] pl-[0.5vw] hover:text-[#534F6B] transition duration-300"" onclick="copyClipboard('levkush')"></i>
                 <i class="fa-brands fa-github text-[2vw] pl-[0.5vw] hover:text-[#534F6B] transition duration-300"" onclick="window.location = 'https://github.com/levkush'"></i>
             </div>
 
@@ -108,7 +116,7 @@
                 <h1>If you need my help, please let me know!</h1>
             </div>
             <div>
-                <button class="font-bold text-[1.3vw] w-[13.7vw] h-[4.6vw] border-[5px] border-solid border-[#534F6B] rounded-[2vw] hover:bg-[#534F6B] transition duration-300" onclick="window.location = 'mailto:levkush@levkush.dev'">Contact me</button>
+                <button class="font-bold text-[1.3vw] w-[13.7vw] h-[4.6vw] border-[5px] border-solid border-[#534F6B] rounded-[2vw] hover:bg-[#534F6B] transition duration-300" onclick="copyClipboard('levkush@levkush.dev')">Contact me</button>
             </div>
         </div>
     </div>
